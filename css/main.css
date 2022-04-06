@@ -50,7 +50,7 @@ ul {
 }
 
 .page {
-
+  background-image: url(../images/bg-mobile.png);
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -58,7 +58,7 @@ ul {
   align-items: center;
 }
 
-@media(max-width:768px) {
+@media(min-width:768px) {
   .page {}
 }
 
@@ -224,4 +224,4 @@ ul {
   font-size: 14px;
 }
 
-@media(min-width:768px) {}
+@media(max-width:768px) {}
