@@ -1,43 +1,227 @@
-*{
+* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing:border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
-body{
+
+body {
   font-family: 'Open Sans', sans-serif;
 }
+
 ul {
   list-style: none;
 }
-/* container  */
-.container{
-    padding-left: 15px;
-    padding-right: 15px;
-  width:100%;
-    margin-left: auto;
-    margin-right:auto ;
-}
-/* small */
-@media (min-width:768px){
-    .container{
-        width:750px;
-    }
-}
-/* medium */
-@media (min-width:992px){
-    .container{
-        width:970px;
 
-    }
+/* container  */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+/* small */
+@media (min-width:768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* medium */
+@media (min-width:992px) {
+  .container {
+    width: 970px;
+
+  }
+}
+
 /* large */
-@media (min-width:1200px){
-    .container{
-        width:1170px;
-    }
+@media (min-width:1200px) {
+  .container {
+    width: 1170px;
+  }
 }
+
+.page {
+
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(max-width:768px) {
+  .page {}
+}
+
+.page .container {
+  z-index: 2;
+}
+
+.page .container .mar {}
+
+.page .container .fylo {
+  background-color: hsl(228, 56%, 26%);
+  padding: 20px;
+  border-radius: 10px;
+  border-top-right-radius: 110px;
+}
+
+.page .container .fylo .logo {
+  margin-bottom: 25px;
+  margin-top: 15px;
+  width: 100%;
+  margin-left: 10px;
+}
+
+.page .container .fylo .logo img {
+  width: 45%;
+}
+
+.page .container .fylo .components {
+  margin-bottom: 25px;
+  display: flex;
+  margin-left: 10px;
+  gap: 10px;
+}
+
+.page .container .fylo .components div {
+
+  padding: 10px;
+  background-color: hsl(229, 57%, 11%);
+  align-items: center;
+  display: flex;
+  border-radius: 7px;
+}
+
+.page .container .fylo .components .folder {}
+
+.page .container .fylo .components .document {}
+
+.page .container .fylo .components .upload {}
+
+.page .container .fylo .components img {
+  border-style: none;
+  width: 19px;
+}
+
+.page .image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+
+.page .image img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50%;
+}
+
+
+.page .container .usage {
+  margin-top: 20px;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.page .container .usage .text {
+  color: white;
+  padding: 14px;
+  font-weight: 300;
+}
+
+.page .container .usage .text span {
+  font-weight: 500;
+}
+
+.page .container .usage .bar {
+  width: 90%;
+  height: 15px;
+  background-color: hsl(229, 57%, 11%);
+  margin: 0 auto;
+  border-radius: 25px;
+}
+
+.bar span {
+  width: 90%;
+  height: 100%;
+  display: block;
+  background-image: linear-gradient(to right, #ff9e9b, #f84692);
+  border-radius: 20px;
+  position: relative;
+}
+
+.bar span::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  top: 1.5px;
+  right: 2.5px;
+}
+
+.page .container .usage .fromto {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 42px;
+  margin-top: 10px;
+  color: white;
+  font-size: 14px;
+}
+
+.page .container .usage .fromto .from {}
+
+.page .container .usage .fromto .to {}
+
+.page .container .usage .left {
+  position: absolute;
+  width: 190px;
+  height: 60px;
+  background-color: white;
+  bottom: -30px;
+  left: 50%;
+  transform: translatex(-50%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page .container .usage .left .num {
+  font-size: 35px;
+  font-weight: 700;
+  margin-right: 13px;
+}
+
+.page .container .usage .left .eight {
+  position: relative;
+  top: -3px;
+}
+
+.page .container .usage .left .gbleft {
+  font-size: 14px;
+}
+
+@media(min-width:768px) {}
